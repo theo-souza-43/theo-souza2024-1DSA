@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+  box-sizing: border-box; /* Adicionado para melhor controle de layout */
+    letter-spacing: 1px;
+}
+
+body {
+    background-color: #d9d6d0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#nome {
+    text-align: center;
+    padding: 40px;
+    font: normal 400 36px "Baskervville SC", serif;
+  transition: color 200ms linear, transform 200ms linear; /* Adiciona transição para propriedades específicas */
+}
+
+#nome:hover {
+  color: #555; /* Cor alterada no hover */
+  transform: translateY(-5px); /* Aumenta ligeiramente o tamanho */
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto Flex", sans-serif;
+    margin-top: -15px;
+    padding: none;
+}
+
+.item {
+    padding: 10px;
+    font-size: 14px;
+}
+
+#container-dois {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    margin-left: 111px;
+    margin-bottom: 80px;
+}
+
+#whatsapp{
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    margin-top: -22px;    
+}
+
+#insta {
+    margin-left: 40px;
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    margin-top: -22px;
+}
+
+#joia {
+    height: 620px;
+    width: 1140px;
+    margin: 0 auto; /* Centraliza o elemento */
+    padding-bottom: 30px;
+}
+/*the second section*/
+
+.second-sec {
+    background-color: #d9d6d0;
+    padding: 20px;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    text-align: center;
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 14px;
+}
+
+.container-more{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#image-brinco {
+    height: 500px;
+    width: 780px;
+    margin-left: 20px;
+}
+
+.card-one{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: #a8a8a7;
+    width: 260px;
+    height: 380px;
+    margin-right: 139px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #000000aa;
+    border: #0000;
+}
+
+.card-one img{
+    width: 180px;
+    height: 180px;
+    border-radius: 5px;
+    margin: 35px;
+}
+
+.card-one h1{
+    font-size: 1.2rem;
+    margin: 3px;
+}
+.card-one h2{
+    font-size: .9rem;
+    color: #373636aa;
+    margin-bottom: 8px;
+}
+.card-one button{
+    font-family: "Roboto Flex", sans-serif;
+    background-color: #2192FF;
+    height: 30px;
+    border: none;
+    padding: 4px;
+    width: 80%;
+    color: #ffff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 19px;
+}
+
+/*from here is the footer*/
+
+#footer_content {
+  background-color: #2d2421;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3rem 4rem;
+  color: #000;
+}
+#logo {
+  height: 80px;
+  width: 130px;
+}
+#footer_contacts h1 {
+  margin-bottom: 0.75rem;
+}
+#footer_social_media {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+#footer_social_media .footer_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5;
+  width: 2.5;
+  color: green;
+  border-radius: 50%;
+}
+.footer_list{
+    margin-left: 80px;
+}
+#footer_copyright{
+    display: flex;
+    justify-content: center;
+    background-color: #271f1d;
+    padding: 20px;
+    color: #000;
+}
+.section-divider {
+    height: 2px;
+    background-color: #333;
+    margin: 20px 0;
+    transform: skewX(-20deg);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .section-divider::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 10%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+  }
+  
+  .back-to-top img {
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .back-to-top:hover {
+    opacity: 0.8;
+  }
+  
+  .back-to-top:hover img {
+    transform: translateY(-5px);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+
+/*from here is the "produtos" */
+
+/* Estilização da seção de produtos */
+.products-real {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(580px, 1fr)); /* Colunas ajustáveis */
+  gap: 30px; /* Espaçamento entre os cards */
+  justify-items: center; /* Centraliza os cards horizontalmente */
+  margin: 20px; /* Margem externa */
+  padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilização dos cards */
+.card-one {
+  background-color: #a8a8a7; /* Cor de fundo */
+  border: 1px solid #ccc; /* Borda leve */
+  border-radius: 10px; /* Cantos arredondados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  text-align: center; /* Centraliza o texto */
+  transition: transform 0.3s ease; /* Efeito suave */
+}
+
+/* Efeito hover nos cards */
+.card-one:hover {
+  transform: translateY(-10px); /* Efeito de elevação */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+}
+
+/* Estilização das imagens dentro dos cards */
+.card-one img {
+  max-width: 100%; /* Ajusta a largura da imagem */
+  height: auto; /* Mantém a proporção */
+  border-radius: 8px; /* Cantos arredondados */
+  margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+
+
+/* Efeito hover para o menu */
+.menu a:hover {
+  color: #000000 !important; /* Cor cinza ao passar o mouse (ajuste conforme o design) */
+}
+/* Remove a cor padrão dos links do Bootstrap */
+a {
+  color: inherit !important;  /* Herda a cor do elemento pai */
+  text-decoration: none;
+}
+.section{
+  background-color: #d9d6d0 !important;
+}
+#cor{
+  background-color: #d9d6d0 !important;
+}
+
+textarea {
+  pointer-events: none; /* Impede a interação com a área de texto */
+  background-color: #f0f0f0; /* Opcional: alinha a aparência com campos desabilitados */
+  color: #777; /* Opcional: altera a cor do texto */
+}
+
